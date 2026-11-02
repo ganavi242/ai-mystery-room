@@ -1,1 +1,175 @@
+export const mysteryData = {
+  diamond: {
+    id: 'diamond',
+    title: 'The Midnight Diamond Heist',
 
+    premise:
+      'A priceless Moonlight Diamond disappeared from the Royal Heritage Museum at 8:00 PM. Security cameras stopped working for five minutes, and three suspects were seen near the exhibition hall. Investigate the evidence and discover who stole the diamond.',
+
+    suspects: [
+      {
+        id: 1,
+        name: 'Alex Morgan',
+        role: 'Museum Security Guard',
+        motive: 'Wanted money to pay off personal debts.',
+        alibi: 'Claims to have been checking the main entrance.',
+      },
+      {
+        id: 2,
+        name: 'Sophia Williams',
+        role: 'Art Historian',
+        motive: 'Wanted the diamond for her private collection.',
+        alibi: 'Claims to have been studying paintings in another room.',
+      },
+      {
+        id: 3,
+        name: 'Daniel Carter',
+        role: 'Museum Technician',
+        motive: 'Needed money and had access to the security system.',
+        alibi: 'Claims to have been repairing a computer in the basement.',
+      },
+    ],
+
+    clues: [
+      {
+        id: 1,
+        title: 'Broken Glass',
+        description:
+          'Small pieces of glass were found near the display case. However, the glass appears to have been broken from the inside.',
+      },
+      {
+        id: 2,
+        title: 'Missing Key',
+        description:
+          'A spare key to the exhibition hall is missing. The key was last recorded in the museum maintenance room.',
+      },
+      {
+        id: 3,
+        title: 'Security Schedule',
+        description:
+          'The security system was disabled for five minutes using a maintenance terminal. Only authorised technical staff could access it.',
+      },
+    ],
+
+    correctSuspectId: 3,
+
+    solution:
+      'Daniel Carter stole the Moonlight Diamond. His technical access allowed him to disable the security system, and the missing key helped him reach the exhibition hall. The security schedule connects him to the five-minute camera outage.',
+  },
+
+  painting: {
+    id: 'painting',
+    title: 'The Missing Masterpiece',
+
+    premise:
+      'A famous painting vanished from the Grand Art Gallery shortly before closing time. The gallery doors remained locked, but a strange paint mark and an incomplete visitor log suggest that someone inside knows more than they admit. Examine the clues and identify the culprit.',
+
+    suspects: [
+      {
+        id: 1,
+        name: 'Olivia Bennett',
+        role: 'Gallery Curator',
+        motive: 'Wanted to sell the valuable painting to a private collector.',
+        alibi: 'Claims to have been arranging artwork in the east wing.',
+      },
+      {
+        id: 2,
+        name: 'Ethan Brooks',
+        role: 'Gallery Security Officer',
+        motive: 'Was struggling with financial problems.',
+        alibi: 'Claims to have been monitoring the main entrance.',
+      },
+      {
+        id: 3,
+        name: 'Lucas Reed',
+        role: 'Art Restoration Specialist',
+        motive: 'Wanted recognition for discovering a hidden detail in the painting.',
+        alibi: 'Claims to have been working in the restoration studio.',
+      },
+    ],
+
+    clues: [
+      {
+        id: 1,
+        title: 'Paint Mark',
+        description:
+          'A fresh paint mark was discovered near the staff-only exit. It matches the colour used on the frame of the missing masterpiece.',
+      },
+      {
+        id: 2,
+        title: 'Gallery Log',
+        description:
+          'The visitor log shows that the gallery was closed before the painting disappeared, but a staff access entry was recorded afterward.',
+      },
+      {
+        id: 3,
+        title: 'Missing Record',
+        description:
+          'A record documenting the painting’s temporary movement was removed from the gallery office. The curator had access to these records.',
+      },
+    ],
+
+    correctSuspectId: 1,
+
+    solution:
+      'Olivia Bennett, the gallery curator, stole the masterpiece. Her access to gallery records allowed her to remove the movement record, while the paint mark and after-hours access indicate that the painting was moved through the staff-only area.',
+  },
+
+  necklace: {
+    id: 'necklace',
+    title: 'The Vanished Necklace',
+
+    premise:
+      'An expensive diamond necklace disappeared during a private party at the Blackwood Mansion. The jewellery box was found empty, and the guests insist that nobody entered the room. Investigate the clues, question the suspects, and uncover the truth.',
+
+    suspects: [
+      {
+        id: 1,
+        name: 'Mia Collins',
+        role: 'Party Host',
+        motive: 'Wanted to sell the necklace to settle a personal debt.',
+        alibi: 'Claims to have welcomed guests at the front door.',
+      },
+      {
+        id: 2,
+        name: 'Noah Parker',
+        role: 'Family Friend',
+        motive: 'Wanted to impress a collector with valuable jewellery.',
+        alibi: 'Claims to have spent the evening in the garden.',
+      },
+      {
+        id: 3,
+        name: 'Grace Mitchell',
+        role: 'Housekeeper',
+        motive: 'Needed money and knew where the spare keys were kept.',
+        alibi: 'Claims to have been cleaning the dining room.',
+      },
+    ],
+
+    clues: [
+      {
+        id: 1,
+        title: 'Empty Jewellery Box',
+        description:
+          'The necklace was missing from its box. There were no signs of forced entry, suggesting that the culprit had access to the room.',
+      },
+      {
+        id: 2,
+        title: 'Spare Key',
+        description:
+          'The spare key to the jewellery room was missing from its usual location. The housekeeper knew where it was stored.',
+      },
+      {
+        id: 3,
+        title: 'Guest List',
+        description:
+          'The guest list confirms that Grace Mitchell was working near the jewellery room shortly before the necklace disappeared.',
+      },
+    ],
+
+    correctSuspectId: 3,
+
+    solution:
+      'Grace Mitchell stole the necklace. Her knowledge of the spare key’s location gave her access to the jewellery room, and the guest list places her near the room shortly before the theft.',
+  },
+}
